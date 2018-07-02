@@ -4,7 +4,7 @@ from flask import Flask, redirect
 app = Flask(__name__)
 @app.route('/',methods=['GET','POST'])
 def index():
-     return "<a href='/new'>点击这里哦!  </a><a href='/old'>这里也可以点!  </a><br><a href='/o1'>别点上面点这里!  </a><a href='/o2'>别理他们点我!  </a>"
+     return "<a href='/new'>点击这里哦!      </a><a href='/old'>这里也可以点!      </a><br><a href='/o1'>别点上面点这里!      </a><a href='/o2'>别理他们点我!      </a>"
 @app.route('/new',methods=['GET','POST'])
 
 def new():
@@ -18,7 +18,7 @@ def old():
 def o1():
     return "<a href='/'>yooooo</a>"
 
-@app.route('/02',methods=['GET','POST'])
+@app.route('/o2',methods=['GET','POST'])
 def o2():
     return "<a href='/'>halahala</a>"
 
